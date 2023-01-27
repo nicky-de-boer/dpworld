@@ -1,0 +1,7 @@
+beautifulsoup4
+requests
+pandas
+openpyxl
+xlsxwriter
+flask
+flask-cors
