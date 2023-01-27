@@ -5,8 +5,6 @@ import sqlite3
 
 # UP Event number accordingly by one
 EVENT_NUMBER = 2023108
-# MARTIJN = 8091
-# DAVID = 17277
 DAVID = 48269
 MARTIJN = 43042
 JOHAN = 48912
