@@ -307,7 +307,7 @@ def handle_player_request(player):
         captains = []
 
         # MARTIJN
-        for item in johan_players:
+        for item in martijns_players:
             name = item['firstname'] + " " + item['lastname'].lower().capitalize()
 
             score_today = "-"
