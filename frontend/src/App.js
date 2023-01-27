@@ -76,7 +76,7 @@ export default function App() {
   useEffect(() => {
     setLoading(true)
     axios
-      .get(local + '?player=' + 'Matchups')
+      .get(prod + '?player=' + 'Matchups')
       .then((res) => {
         setLoading(false)
         setDataPoints(res.data)
