@@ -11,11 +11,11 @@ function BasicExample() {
 
   const [eventname, setEventName] = useState("")
   const local_event_name = 'http://127.0.0.1:5000/geteventname'
-  const prod_event_name = 'https://dp-matchups.herokuapp.com/geteventname'
+  const prod_event_name = 'https://dp-matchups.onrender.com/geteventname'
 
   useEffect(() => {
     axios
-      .get(local_event_name)
+      .get(prod_event_name)
       .then((res) => {
         setEventName(res.data)
       })

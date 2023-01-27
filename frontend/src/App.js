@@ -71,7 +71,7 @@ export default function App() {
   // }
   
   const local = 'http://127.0.0.1:5000/matchups'
-  const prod = 'https://dp-matchups.herokuapp.com/matchups'
+  const prod = 'https://dp-matchups.onrender.com/matchups'
 
   useEffect(() => {
     setLoading(true)
