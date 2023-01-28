@@ -32,7 +32,9 @@
 
 
 .loaderdiv {
-  margin-top: 10rem
+  margin-top: 10rem;
+  background-image: url(BACKGROUND.png);
+  background-size: cover;
 }
 
 .loadertext {
