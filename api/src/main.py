@@ -4,7 +4,7 @@ import json
 import sqlite3
 
 # UP Event number accordingly by one
-EVENT_NUMBER = 2023108
+EVENT_NUMBER = 2023109
 DAVID = 48269
 MARTIJN = 43042
 JOHAN = 48912
@@ -49,7 +49,8 @@ def get_scores():
             '9-11-2022': {'Birdy-D': 22765, 'Nickydb12': 23102, 'mvandoor': 23275, 'JopWiel': 20287},
             '14-11-2022': {'Birdy-D': 23614, 'Nickydb12': 23953, 'mvandoor': 24209, 'JopWiel': 21329},
             '19-01-2023': {'Birdy-D': 0, 'Nickydb': 0, 'martijnvandooren': 0, 'Jopwiel': 0, 'Johan': 0},
-            '26-01-2023': {'Birdy-D': 1016, 'Nickydb': 853, 'martijnvandooren': 861, 'Jopwiel': 1103, 'Johan': 1044}
+            '26-01-2023': {'Birdy-D': 1016, 'Nickydb': 853, 'martijnvandooren': 861, 'Jopwiel': 1103, 'Johan': 1044},
+            '02-02-2023': {'Birdy-D': 1952, 'Nickydb': 1907, 'martijnvandooren': 1934, 'Jopwiel': 1978, 'Johan': 2074}
             }
 
     # create_db_table()
@@ -260,7 +261,7 @@ def handle_player_request(player):
 
         standings = get_standings()
 
-        start_score = get_scores()['26-01-2023']
+        start_score = get_scores()['02-02-2023']
 
 
         # Name
