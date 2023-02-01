@@ -1,6 +1,6 @@
-from api.src.main import handle_player_request, get_name, get_scores
+from main import handle_player_request, get_scores, handle_matchups
+from calls import current_event_name
 from flask import Flask, request, jsonify, send_from_directory
-from flask_cors import CORS, cross_origin
 
 app = Flask(__name__, static_url_path='', static_folder='frontend/build')
 app.config['JSON_AS_ASCII'] = False
@@ -15,8 +15,7 @@ def get_scores_endpoint():
 @app.route("/geteventname", methods=["GET"])
 def get_eventname():
     app.config['JSON_AS_ASCII'] = False
-    res = jsonify(get_name())
-    import json
+    res = jsonify(current_event_name())
     # json.dumps(json.loads(res.data.decode('utf-8')), ensure_ascii=False)
     res.headers.add("Access-Control-Allow-Origin", "*")
     return res
@@ -24,7 +23,7 @@ def get_eventname():
 @app.route("/matchups", methods=["GET"])
 def start():
     player = request.args.get('player')
-    res = handle_player_request(player)
+    res = handle_matchups()
     app.logger.info(res)
     res = jsonify(res)
     
