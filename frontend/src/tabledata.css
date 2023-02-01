@@ -12,16 +12,19 @@
   border-right: .05em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .10em; /* Adjust as needed */
+  /* display: flex;
+  justify-content: center; */
+  text-align: center;
+  letter-spacing: 2px; /* Adjust as needed */
   animation: 
-    typing 3.5s steps(30, end),
-    blink-caret .5s infinite;
+    typing 4.5s steps(40, end),
+    blink-caret .5s step-end infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
-  to { width: 88% }
+  to { width: 100% }
 }
 
 /* The typewriter cursor effect */
@@ -32,16 +35,19 @@
 
 
 .loaderdiv {
-  margin-top: 10rem
+  margin-top: 10rem;
+  margin-bottom: -4%;
+  display: flex;
+  justify-content: center;
 }
 
-.loadertext {
+/* .loadertext {
   color: white;
   font-family: Montserrat, Tahoma, Verdana, Segoe, sans-serif;
   font-size: 24px;
   text-align: center;
   vertical-align: center;
-}
+} */
 
 
 span.navbar-brand {
@@ -145,10 +151,15 @@ tr > td {
 
 div {
   background-color:#212529;
+  
 }
 
 html {
   background-color:#212529;
+  background-image: url('BACKGROUND.png');
+  background-size: 1170px 66rem;
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 
 tr:first-of-type{
@@ -196,6 +207,11 @@ tr > th:nth-child(3),th:nth-child(4),th:nth-child(5),th:nth-child(6),th:nth-chil
   text-align: center;
 } 
 
+/* body {
+  background-color: rgba(166, 149, 149, 0.55);
+  background-image: url('BACKGROUND.png');
+  background-repeat: no-repeat;
+} */
 
 /* div.root {
   position: absolute;
@@ -205,9 +221,7 @@ html {
   background-color:rgba(116, 101, 101, 0.55);
 }
 
-body {
-  background-color: rgba(166, 149, 149, 0.55);
-}
+
 
 div.content {
   background-color: #212529;
