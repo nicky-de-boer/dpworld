@@ -15,7 +15,7 @@ function BasicExample() {
 
   useEffect(() => {
     axios
-      .get(prod_event_name)
+      .get(local_event_name)
       .then((res) => {
         setEventName(res.data)
       })
